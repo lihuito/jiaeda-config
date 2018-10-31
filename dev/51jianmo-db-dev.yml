@@ -1,14 +1,16 @@
+
+#基本属性 url、users、password
 spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://127.0.0.1:3306/51-jianmo?characterEncoding=utf8
-    userName: root
-    password: root
+    url: jdbc:mysql://192.168.20.8:3306/jmyd_model?characterEncoding=utf8
+    userName: web_developer
+    password: czkj027
 #配置初始化大小、最小、最大
-    initialSize: 5
-    minIdle: 5
-    maxActive: 30
+    initialSize: 1
+    minIdle: 1
+    maxActive: 20
 #配置获取连接等待超时的时间
     maxWait: 60000
 #配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
